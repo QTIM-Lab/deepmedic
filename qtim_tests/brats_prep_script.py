@@ -8,8 +8,8 @@ from subprocess import call
 
 
 
-BRATS_PATH = '/mnt/eminas01/Ken/BRATS2015/BRATS2015_Training'
-OUTPUT_PATH = '/mnt/eminas01/DeepMedic_Data'
+BRATS_PATH = '/eminas/Ken/BRATS2015/BRATS2015_Training'
+OUTPUT_PATH = '/eminas/DeepMedic_Data'
 GRADES = ['HGG','LGG']
 
 def Convert_BRATS_Data():
