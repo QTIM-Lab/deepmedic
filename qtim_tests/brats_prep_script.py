@@ -109,7 +109,7 @@ def splitPerc(L, perc):
 
 def Sort_BRATS():
 
-	config_path = '/home/abeers/Github/deepmedic/qtim_tests/Full_Brats_Dataset/configFiles/deepMedic_Full_Brats/'
+	config_path = './Full_Brats_Dataset/configFiles/deepMedic_Full_Brats/'
 
 	subdirs = []
 

@@ -1,0 +1,172 @@
+2017-03-19 16:02:39.516044 >> CONFIG: The configuration file for the model-creation session was loaded from: /home/administrator/projects/deep_medic_branch/deepmedic/examples/configFiles/tinyCnn/model/modelConfig.cfg
+2017-03-19 16:02:39.516152 >> ===========    NEW CREATE-MODEL SESSION    ============
+2017-03-19 16:02:39.516178 >> =============================================================
+2017-03-19 16:02:39.516196 >> =============== PARAMETERS FOR MODEL CREATION ===============
+2017-03-19 16:02:39.516212 >> =============================================================
+2017-03-19 16:02:39.516227 >> CNN model's name = tinyCnn
+2017-03-19 16:02:39.516243 >> Main output folder = /home/administrator/projects/deep_medic_branch/deepmedic/examples/output
+2017-03-19 16:02:39.516258 >> Path and filename to save model = /home/administrator/projects/deep_medic_branch/deepmedic/examples/output/cnnModels/tinyCnn
+2017-03-19 16:02:39.516273 >> ~~~~~~~~~~~~~~~~~~Model parameters~~~~~~~~~~~~~~~~
+2017-03-19 16:02:39.516288 >> Number of Classes (including background) = 5
+2017-03-19 16:02:39.516303 >> ~~Normal Pathway~~
+2017-03-19 16:02:39.516317 >> Number of Input Channels = 2
+2017-03-19 16:02:39.516350 >> Number of Layers = 3
+2017-03-19 16:02:39.516372 >> Number of Feature Maps per layer = [4, 5, 6]
+2017-03-19 16:02:39.516392 >> Kernel Dimensions per layer = [[3, 3, 3], [3, 3, 3], [3, 3, 3]]
+2017-03-19 16:02:39.516408 >> Receptive Field = [7, 7, 7]
+2017-03-19 16:02:39.516425 >> Residual connections added at the output of layers (indices from 0) = []
+2017-03-19 16:02:39.516441 >> Layers that will be made of Lower Rank (indices from 0) = []
+2017-03-19 16:02:39.516456 >> Lower Rank layers will be made of rank = []
+2017-03-19 16:02:39.516497 >> ~~Subsampled Pathway~~
+2017-03-19 16:02:39.516518 >> Use subsampled Pathway = False
+2017-03-19 16:02:39.516535 >> Number of Layers = 0
+2017-03-19 16:02:39.516552 >> Number of Feature Maps per layer = []
+2017-03-19 16:02:39.516569 >> Kernel Dimensions per layer = []
+2017-03-19 16:02:39.516585 >> Receptive Field = []
+2017-03-19 16:02:39.516602 >> Subsampling Factor = []
+2017-03-19 16:02:39.516619 >> Residual connections added at the output of layers (indices from 0) = []
+2017-03-19 16:02:39.516636 >> Layers that will be made of Lower Rank (indices from 0) = []
+2017-03-19 16:02:39.516655 >> Lower Rank layers will be made of rank = []
+2017-03-19 16:02:39.516672 >> ~~Fully Connected Pathway~~
+2017-03-19 16:02:39.516689 >> Number of additional FC layers (Excluding the Classif. Layer) = 0
+2017-03-19 16:02:39.516706 >> Number of Feature Maps in the additional FC layers = []
+2017-03-19 16:02:39.516723 >> Residual connections added at the output of layers (indices from 0) = []
+2017-03-19 16:02:39.516739 >> Layers that will be made of Lower Rank (indices from 0) = []
+2017-03-19 16:02:39.516757 >> Dimensions of Kernels in the 1st FC layer (Classif. layer if no hidden FCs used) = [1, 1, 1]
+2017-03-19 16:02:39.516774 >> ~~Size Of Image Segments~~
+2017-03-19 16:02:39.516808 >> Size of Segments for Training = [25, 25, 25]
+2017-03-19 16:02:39.516824 >> Size of Segments for Validation = [7, 7, 7]
+2017-03-19 16:02:39.516841 >> Size of Segments for Testing = [45, 45, 45]
+2017-03-19 16:02:39.516856 >> ~~Size Of Image Segments (Subsampled, auto-calculated)~~
+2017-03-19 16:02:39.516872 >> Size of Segments for Training (Subsampled) = []
+2017-03-19 16:02:39.516889 >> Size of Segments for Validation (Subsampled) = []
+2017-03-19 16:02:39.516904 >> Size of Segments for Testing (Subsampled) = []
+2017-03-19 16:02:39.516920 >> ~~Batch Sizes~~
+2017-03-19 16:02:39.516935 >> Batch Size for Training = 10
+2017-03-19 16:02:39.516951 >> Batch Size for Validation = 50
+2017-03-19 16:02:39.516966 >> Batch Size for Testing = 10
+2017-03-19 16:02:39.516981 >> ~~Dropout Rates~~
+2017-03-19 16:02:39.516997 >> Drop.R. for each layer in Normal Pathway = []
+2017-03-19 16:02:39.517029 >> Drop.R. for each layer in Subsampled Pathway = []
+2017-03-19 16:02:39.517050 >> Drop.R. for each layer in FC Pathway (additional FC layers + Classific.Layer at end) = [0.5]
+2017-03-19 16:02:39.517086 >> ~~L1/L2 Regularization~~
+2017-03-19 16:02:39.517105 >> L1 Regularization term = 1e-06
+2017-03-19 16:02:39.517138 >> L2 Regularization term = 0.0001
+2017-03-19 16:02:39.517153 >> ~~Weight Initialization~~
+2017-03-19 16:02:39.517168 >> Classic random N(0,0.01) initialization (0), or ala "Delving Into Rectifier" (1) = 1
+2017-03-19 16:02:39.517183 >> ~~Activation Function~~
+2017-03-19 16:02:39.517198 >> ReLU (0), or PReLU (1) = 1
+2017-03-19 16:02:39.517212 >> ~~Batch Normalization~~
+2017-03-19 16:02:39.517230 >> Apply BN straight on pathways' inputs (eg straight on segments) = [False, False, 'Placeholder', False]
+2017-03-19 16:02:39.517248 >> Batch Normalization uses a rolling average for inference, over this many batches = 60
+2017-03-19 16:02:39.517263 >> ~~Optimization~~
+2017-03-19 16:02:39.517279 >> Initial Learning rate = 0.001
+2017-03-19 16:02:39.517294 >> Optimizer to use: SGD(0), Adam(1), RmsProp(2) = 2
+2017-03-19 16:02:39.517309 >> Parameters for Adam: b1= placeholder, b2=placeholder, e= placeholder
+2017-03-19 16:02:39.517325 >> Parameters for RmsProp: rho= 0.9, e= 0.0001
+2017-03-19 16:02:39.517340 >> Momentum Type: Classic (0) or Nesterov (1) = 1
+2017-03-19 16:02:39.517356 >> Momentum Non-Normalized (0) or Normalized (1) = 1
+2017-03-19 16:02:39.517371 >> Momentum Value = 0.6
+2017-03-19 16:02:39.517386 >> ========== Done with printing session's parameters ==========
+2017-03-19 16:02:39.517417 >> =============================================================
+2017-03-19 16:02:39.517433 >> =========== Creating the CNN model ===============
+2017-03-19 16:02:39.518578 >> ...Building the CNN model...
+2017-03-19 16:02:39.567708 >> DEBUG: Shape of output of the FIRST PATH: (Train) [10, 6, 19, 19, 19], (Val) [50, 6, 1, 1, 1], (Test) [10, 6, 39, 39, 39]
+2017-03-19 16:02:39.567770 >> DEBUG: Shape of the kernel of the first FC layer is : [1, 1, 1]
+2017-03-19 16:02:39.567854 >> DEBUG: Shape of input to the FC PATH: (Train) [10, 6, 19, 19, 19], (Val) [50, 6, 1, 1, 1], (Test) [10, 6, 39, 39, 39]
+2017-03-19 16:02:39.567883 >> DEBUG: Filter Shape of the final-FC-classification Layer: [5, 6, 1, 1, 1]
+2017-03-19 16:02:39.567905 >> DEBUG: Shape of input to the Classification layer: (Train) [10, 6, 19, 19, 19], (Val) [50, 6, 1, 1, 1], (Test) [10, 6, 39, 39, 39]
+2017-03-19 16:02:39.592600 >> Finished building the CNN's model.
+2017-03-19 16:02:39.592661 >> Setting the training-related attributes of the CNN.
+2017-03-19 16:02:39.592695 >> UPDATE: (epoch-cnn-trained#0) Changing the Cnn's Learning Rate to: 0.001
+2017-03-19 16:02:39.592759 >> UPDATE: (epoch-cnn-trained#0) Changing the Cnn's Momentum to: 0.6
+2017-03-19 16:02:39.592825 >> UPDATE: (epoch-cnn-trained#0) Changing the Cnn's Rho parameter for RMSProp optimization to: Rho = 0.9
+2017-03-19 16:02:39.592850 >> ...Building the training function...
+2017-03-19 16:02:39.602516 >> Optimizer used: [RMSProp]. Momentum used: Classic0 or Nesterov1 : 1
+2017-03-19 16:02:39.859887 >> ...Compiling the function for training... (This may take a few minutes...)
+2017-03-19 16:03:28.343850 >> CONFIG: The configuration file for the model-creation session was loaded from: /home/administrator/projects/deep_medic_branch/deepmedic/examples/configFiles/tinyCnn/model/modelConfig.cfg
+2017-03-19 16:03:28.343989 >> ===========    NEW CREATE-MODEL SESSION    ============
+2017-03-19 16:03:28.344018 >> =============================================================
+2017-03-19 16:03:28.344036 >> =============== PARAMETERS FOR MODEL CREATION ===============
+2017-03-19 16:03:28.344052 >> =============================================================
+2017-03-19 16:03:28.344068 >> CNN model's name = tinyCnn
+2017-03-19 16:03:28.344084 >> Main output folder = /home/administrator/projects/deep_medic_branch/deepmedic/examples/output
+2017-03-19 16:03:28.344101 >> Path and filename to save model = /home/administrator/projects/deep_medic_branch/deepmedic/examples/output/cnnModels/tinyCnn
+2017-03-19 16:03:28.344116 >> ~~~~~~~~~~~~~~~~~~Model parameters~~~~~~~~~~~~~~~~
+2017-03-19 16:03:28.344132 >> Number of Classes (including background) = 5
+2017-03-19 16:03:28.344156 >> ~~Normal Pathway~~
+2017-03-19 16:03:28.344172 >> Number of Input Channels = 2
+2017-03-19 16:03:28.344188 >> Number of Layers = 3
+2017-03-19 16:03:28.344206 >> Number of Feature Maps per layer = [4, 5, 6]
+2017-03-19 16:03:28.344225 >> Kernel Dimensions per layer = [[3, 3, 3], [3, 3, 3], [3, 3, 3]]
+2017-03-19 16:03:28.344241 >> Receptive Field = [7, 7, 7]
+2017-03-19 16:03:28.344258 >> Residual connections added at the output of layers (indices from 0) = []
+2017-03-19 16:03:28.344274 >> Layers that will be made of Lower Rank (indices from 0) = []
+2017-03-19 16:03:28.344289 >> Lower Rank layers will be made of rank = []
+2017-03-19 16:03:28.344304 >> ~~Subsampled Pathway~~
+2017-03-19 16:03:28.344319 >> Use subsampled Pathway = False
+2017-03-19 16:03:28.344336 >> Number of Layers = 0
+2017-03-19 16:03:28.344352 >> Number of Feature Maps per layer = []
+2017-03-19 16:03:28.344367 >> Kernel Dimensions per layer = []
+2017-03-19 16:03:28.344383 >> Receptive Field = []
+2017-03-19 16:03:28.344398 >> Subsampling Factor = []
+2017-03-19 16:03:28.344414 >> Residual connections added at the output of layers (indices from 0) = []
+2017-03-19 16:03:28.344429 >> Layers that will be made of Lower Rank (indices from 0) = []
+2017-03-19 16:03:28.344445 >> Lower Rank layers will be made of rank = []
+2017-03-19 16:03:28.344459 >> ~~Fully Connected Pathway~~
+2017-03-19 16:03:28.344583 >> Number of additional FC layers (Excluding the Classif. Layer) = 0
+2017-03-19 16:03:28.344604 >> Number of Feature Maps in the additional FC layers = []
+2017-03-19 16:03:28.344622 >> Residual connections added at the output of layers (indices from 0) = []
+2017-03-19 16:03:28.344639 >> Layers that will be made of Lower Rank (indices from 0) = []
+2017-03-19 16:03:28.344657 >> Dimensions of Kernels in the 1st FC layer (Classif. layer if no hidden FCs used) = [1, 1, 1]
+2017-03-19 16:03:28.344673 >> ~~Size Of Image Segments~~
+2017-03-19 16:03:28.344691 >> Size of Segments for Training = [25, 25, 25]
+2017-03-19 16:03:28.344709 >> Size of Segments for Validation = [7, 7, 7]
+2017-03-19 16:03:28.344727 >> Size of Segments for Testing = [45, 45, 45]
+2017-03-19 16:03:28.344743 >> ~~Size Of Image Segments (Subsampled, auto-calculated)~~
+2017-03-19 16:03:28.344760 >> Size of Segments for Training (Subsampled) = []
+2017-03-19 16:03:28.344777 >> Size of Segments for Validation (Subsampled) = []
+2017-03-19 16:03:28.344793 >> Size of Segments for Testing (Subsampled) = []
+2017-03-19 16:03:28.344841 >> ~~Batch Sizes~~
+2017-03-19 16:03:28.344857 >> Batch Size for Training = 10
+2017-03-19 16:03:28.344872 >> Batch Size for Validation = 50
+2017-03-19 16:03:28.344888 >> Batch Size for Testing = 10
+2017-03-19 16:03:28.344903 >> ~~Dropout Rates~~
+2017-03-19 16:03:28.344919 >> Drop.R. for each layer in Normal Pathway = []
+2017-03-19 16:03:28.344935 >> Drop.R. for each layer in Subsampled Pathway = []
+2017-03-19 16:03:28.344957 >> Drop.R. for each layer in FC Pathway (additional FC layers + Classific.Layer at end) = [0.5]
+2017-03-19 16:03:28.344973 >> ~~L1/L2 Regularization~~
+2017-03-19 16:03:28.345007 >> L1 Regularization term = 1e-06
+2017-03-19 16:03:28.345024 >> L2 Regularization term = 0.0001
+2017-03-19 16:03:28.345039 >> ~~Weight Initialization~~
+2017-03-19 16:03:28.345070 >> Classic random N(0,0.01) initialization (0), or ala "Delving Into Rectifier" (1) = 1
+2017-03-19 16:03:28.345085 >> ~~Activation Function~~
+2017-03-19 16:03:28.345100 >> ReLU (0), or PReLU (1) = 1
+2017-03-19 16:03:28.345114 >> ~~Batch Normalization~~
+2017-03-19 16:03:28.345131 >> Apply BN straight on pathways' inputs (eg straight on segments) = [False, False, 'Placeholder', False]
+2017-03-19 16:03:28.345147 >> Batch Normalization uses a rolling average for inference, over this many batches = 60
+2017-03-19 16:03:28.345162 >> ~~Optimization~~
+2017-03-19 16:03:28.345177 >> Initial Learning rate = 0.001
+2017-03-19 16:03:28.345210 >> Optimizer to use: SGD(0), Adam(1), RmsProp(2) = 2
+2017-03-19 16:03:28.345232 >> Parameters for Adam: b1= placeholder, b2=placeholder, e= placeholder
+2017-03-19 16:03:28.345254 >> Parameters for RmsProp: rho= 0.9, e= 0.0001
+2017-03-19 16:03:28.345288 >> Momentum Type: Classic (0) or Nesterov (1) = 1
+2017-03-19 16:03:28.345304 >> Momentum Non-Normalized (0) or Normalized (1) = 1
+2017-03-19 16:03:28.345320 >> Momentum Value = 0.6
+2017-03-19 16:03:28.345336 >> ========== Done with printing session's parameters ==========
+2017-03-19 16:03:28.345351 >> =============================================================
+2017-03-19 16:03:28.345367 >> =========== Creating the CNN model ===============
+2017-03-19 16:03:28.349930 >> ...Building the CNN model...
+2017-03-19 16:03:28.419673 >> DEBUG: Shape of output of the FIRST PATH: (Train) [10, 6, 19, 19, 19], (Val) [50, 6, 1, 1, 1], (Test) [10, 6, 39, 39, 39]
+2017-03-19 16:03:28.419737 >> DEBUG: Shape of the kernel of the first FC layer is : [1, 1, 1]
+2017-03-19 16:03:28.419821 >> DEBUG: Shape of input to the FC PATH: (Train) [10, 6, 19, 19, 19], (Val) [50, 6, 1, 1, 1], (Test) [10, 6, 39, 39, 39]
+2017-03-19 16:03:28.419851 >> DEBUG: Filter Shape of the final-FC-classification Layer: [5, 6, 1, 1, 1]
+2017-03-19 16:03:28.419876 >> DEBUG: Shape of input to the Classification layer: (Train) [10, 6, 19, 19, 19], (Val) [50, 6, 1, 1, 1], (Test) [10, 6, 39, 39, 39]
+2017-03-19 16:03:28.456174 >> Finished building the CNN's model.
+2017-03-19 16:03:28.456245 >> Setting the training-related attributes of the CNN.
+2017-03-19 16:03:28.456278 >> UPDATE: (epoch-cnn-trained#0) Changing the Cnn's Learning Rate to: 0.001
+2017-03-19 16:03:28.456362 >> UPDATE: (epoch-cnn-trained#0) Changing the Cnn's Momentum to: 0.6
+2017-03-19 16:03:28.458549 >> UPDATE: (epoch-cnn-trained#0) Changing the Cnn's Rho parameter for RMSProp optimization to: Rho = 0.9
+2017-03-19 16:03:28.458621 >> ...Building the training function...
+2017-03-19 16:03:28.486545 >> Optimizer used: [RMSProp]. Momentum used: Classic0 or Nesterov1 : 1
+2017-03-19 16:03:28.827931 >> ...Compiling the function for training... (This may take a few minutes...)
